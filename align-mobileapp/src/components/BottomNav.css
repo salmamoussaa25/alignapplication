@@ -1,0 +1,27 @@
+.bottomnav_bar {
+  position: sticky;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.94);
+  border-top: 1px solid #e6edf5;
+  backdrop-filter: blur(12px);
+}
+
+.bottomnav_link {
+  text-decoration: none;
+  text-align: center;
+  color: #607189;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 12px 10px;
+  border-radius: 16px;
+}
+
+.bottomnav_on {
+  background: #183153;
+  color: #fff;
+  box-shadow: 0 12px 22px rgba(24, 49, 83, 0.16);
+}

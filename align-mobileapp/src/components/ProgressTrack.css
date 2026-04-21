@@ -1,0 +1,15 @@
+.progresstrack_row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.progresstrack_bar {
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(157, 220, 187, 0.18);
+}
+
+.progresstrack_on {
+  background: #b5ecd0;
+}

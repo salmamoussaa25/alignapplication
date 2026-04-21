@@ -1,0 +1,22 @@
+.glowicon_wrap {
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a9dcc1 0%, #7d97d8 100%);
+  box-shadow: 0 0 42px rgba(157, 220, 187, 0.22);
+}
+
+.glowicon_mark {
+  width: 34px;
+  height: 34px;
+  color: #ffc94f;
+}
+
+.glowicon_play .glowicon_mark {
+  color: #ffffff;
+  margin-left: 4px;
+  fill: #ffffff;
+}

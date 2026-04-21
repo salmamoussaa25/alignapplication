@@ -1,0 +1,405 @@
+.profilescreen_wrap {
+  position: relative;
+  height: 100vh;
+  background: #011d27;
+  overflow: hidden;
+}
+
+.profilescreen_scroll {
+  height: 100%;
+  overflow-y: auto;
+  padding: 14px 14px 76px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.profilescreen_scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.profilescreen_head {
+  margin-bottom: 12px;
+}
+
+.profilescreen_title,
+.profilescreen_sectiontitle {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'IBM Plex Sans Devanagari', 'Segoe UI', sans-serif;
+}
+
+.profilescreen_title {
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.profilescreen_sub,
+.profilescreen_showuptitle,
+.profilescreen_showuptext,
+.profilescreen_cardtitle,
+.profilescreen_cardtext,
+.profilescreen_notebox p,
+.profilescreen_distributionlabel,
+.profilescreen_distributionvalue,
+.profilescreen_distributionnote,
+.profilescreen_barcol p,
+.profilescreen_trendlabel,
+.profilescreen_trendvalue,
+.profilescreen_aititle,
+.profilescreen_aitext,
+.profilescreen_summarytitle,
+.profilescreen_summarytext {
+  margin: 0;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+}
+
+.profilescreen_sub {
+  margin-top: 3px;
+  color: rgba(157, 220, 187, 0.62);
+  font-size: 0.6rem;
+}
+
+.profilescreen_showupcard,
+.profilescreen_card,
+.profilescreen_distributioncard,
+.profilescreen_trendcard,
+.profilescreen_summary {
+  padding: 12px;
+  background: #124559;
+  border: 1px solid rgba(157, 220, 187, 0.15);
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.profilescreen_showuphead {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.profilescreen_showupiconbox {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #9ddcbb 0%, #6478b9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilescreen_showupicon {
+  width: 12px;
+  height: 12px;
+  color: #ffffff;
+}
+
+.profilescreen_showuptitle,
+.profilescreen_cardtitle,
+.profilescreen_sectiontitle,
+.profilescreen_aititle,
+.profilescreen_summarytitle {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.profilescreen_showuptitle {
+  font-size: 0.72rem;
+}
+
+.profilescreen_showuptext,
+.profilescreen_cardtext,
+.profilescreen_distributionnote,
+.profilescreen_summarytext {
+  color: rgba(157, 220, 187, 0.68);
+  font-size: 0.58rem;
+  line-height: 1.45;
+}
+
+.profilescreen_dayrow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.profilescreen_daychip {
+  min-height: 18px;
+  border-radius: 6px;
+  background: rgba(157, 220, 187, 0.2);
+  color: rgba(157, 220, 187, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  font-size: 0.48rem;
+  font-weight: 700;
+}
+
+.profilescreen_daychip_on {
+  background: #9ddcbb;
+  color: #011d27;
+}
+
+.profilescreen_microbars {
+  margin-top: 8px;
+  display: grid;
+  gap: 4px;
+}
+
+.profilescreen_microline,
+.profilescreen_distributiontop,
+.profilescreen_trendfoot {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.profilescreen_microline span,
+.profilescreen_trendlabel {
+  color: rgba(157, 220, 187, 0.68);
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  font-size: 0.54rem;
+}
+
+.profilescreen_section {
+  margin-bottom: 10px;
+}
+
+.profilescreen_sectiontitle {
+  font-size: 0.78rem;
+  margin-bottom: 8px;
+}
+
+.profilescreen_notebox,
+.profilescreen_aicard {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.profilescreen_notebox {
+  background: rgba(157, 220, 187, 0.08);
+  border: 1px solid rgba(157, 220, 187, 0.14);
+}
+
+.profilescreen_notebox + .profilescreen_notebox {
+  margin-top: 8px;
+}
+
+.profilescreen_noteicon {
+  width: 12px;
+  height: 12px;
+  color: #9ddcbb;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.profilescreen_notebox p {
+  color: rgba(157, 220, 187, 0.72);
+  font-size: 0.58rem;
+}
+
+.profilescreen_distributionrow + .profilescreen_distributionrow {
+  margin-top: 8px;
+}
+
+.profilescreen_distributionlabel,
+.profilescreen_distributionvalue {
+  font-size: 0.56rem;
+}
+
+.profilescreen_distributionlabel_lav,
+.profilescreen_distributionvalue_lav {
+  color: rgba(100, 120, 185, 0.9);
+}
+
+.profilescreen_distributionlabel_mint,
+.profilescreen_distributionvalue_mint {
+  color: rgba(157, 220, 187, 0.86);
+}
+
+.profilescreen_distributionlabel_soft,
+.profilescreen_distributionvalue_soft {
+  color: rgba(157, 220, 187, 0.48);
+}
+
+.profilescreen_progbar {
+  width: 100%;
+  height: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(157, 220, 187, 0.14);
+}
+
+.profilescreen_progfill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+}
+
+.profilescreen_progfill_lav {
+  background: #6478b9;
+}
+
+.profilescreen_progfill_mint {
+  background: #9ddcbb;
+}
+
+.profilescreen_progfill_soft {
+  background: rgba(157, 220, 187, 0.4);
+}
+
+.profilescreen_fill_40 {
+  width: 40%;
+}
+
+.profilescreen_fill_22 {
+  width: 22%;
+}
+
+.profilescreen_fill_18 {
+  width: 18%;
+}
+
+.profilescreen_fill_15 {
+  width: 15%;
+}
+
+.profilescreen_fill_5 {
+  width: 5%;
+}
+
+.profilescreen_distributionnote {
+  margin-top: 8px;
+}
+
+.profilescreen_barrow {
+  height: 100px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.profilescreen_barcol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.profilescreen_bar {
+  width: 100%;
+  min-height: 14px;
+  border-radius: 7px 7px 0 0;
+  background: linear-gradient(180deg, #9ddcbb 0%, #6478b9 100%);
+}
+
+.profilescreen_bar_1 { height: 32px; }
+.profilescreen_bar_2 { height: 38px; }
+.profilescreen_bar_3 { height: 28px; }
+.profilescreen_bar_4 { height: 48px; }
+.profilescreen_bar_5 { height: 36px; }
+.profilescreen_bar_6 { height: 18px; }
+.profilescreen_bar_7 { height: 26px; }
+
+.profilescreen_barcol p {
+  color: rgba(157, 220, 187, 0.6);
+  font-size: 0.48rem;
+}
+
+.profilescreen_trendvalue {
+  margin-top: 2px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.profilescreen_trendvalue_mint {
+  color: #9ddcbb;
+}
+
+.profilescreen_aigrid {
+  display: grid;
+  gap: 8px;
+}
+
+.profilescreen_aicard_mint {
+  background: rgba(157, 220, 187, 0.12);
+  border: 1px solid rgba(157, 220, 187, 0.28);
+}
+
+.profilescreen_aicard_warn {
+  background: rgba(255, 141, 87, 0.12);
+  border: 1px solid rgba(255, 141, 87, 0.28);
+}
+
+.profilescreen_aicard_lav {
+  background: rgba(100, 120, 185, 0.12);
+  border: 1px solid rgba(100, 120, 185, 0.28);
+}
+
+.profilescreen_aiiconbox {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.profilescreen_aiiconbox_mint {
+  background: rgba(157, 220, 187, 0.18);
+}
+
+.profilescreen_aiiconbox_warn {
+  background: rgba(255, 141, 87, 0.18);
+}
+
+.profilescreen_aiiconbox_lav {
+  background: rgba(100, 120, 185, 0.18);
+}
+
+.profilescreen_aiicon {
+  width: 12px;
+  height: 12px;
+}
+
+.profilescreen_aiicon_mint {
+  color: #9ddcbb;
+}
+
+.profilescreen_aiicon_warn {
+  color: #ff8d57;
+}
+
+.profilescreen_aiicon_lav {
+  color: #6478b9;
+}
+
+.profilescreen_aititle {
+  font-size: 0.66rem;
+}
+
+.profilescreen_aitext {
+  margin-top: 2px;
+  font-size: 0.56rem;
+  line-height: 1.45;
+}
+
+.profilescreen_aitext_mint {
+  color: rgba(157, 220, 187, 0.74);
+}
+
+.profilescreen_aitext_warn {
+  color: rgba(255, 200, 40, 0.86);
+}
+
+.profilescreen_aitext_lav {
+  color: rgba(100, 120, 185, 0.8);
+}

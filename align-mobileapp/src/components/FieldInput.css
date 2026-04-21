@@ -1,0 +1,28 @@
+.fieldinput_wrap {
+  display: grid;
+  gap: 8px;
+}
+
+.fieldinput_label {
+  font-size: 0.86rem;
+  color: #42546d;
+  font-weight: 700;
+}
+
+.fieldinput_box {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: 1px solid #d7e0eb;
+  background: #fbfcfe;
+  padding: 14px 14px;
+  font-size: 0.94rem;
+  color: #183153;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fieldinput_box:focus {
+  border-color: #2f6cb0;
+  box-shadow: 0 0 0 4px rgba(47, 108, 176, 0.12);
+}

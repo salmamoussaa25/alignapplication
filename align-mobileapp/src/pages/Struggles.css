@@ -1,0 +1,47 @@
+.strugglepg_wrap {
+  height: 100vh;
+  position: relative;
+  background: #011d27;
+  overflow: hidden;
+}
+
+.strugglepg_scroll {
+  height: 100%;
+  overflow-y: auto;
+  padding: 52px 18px 112px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.strugglepg_scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.strugglepg_head {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.strugglepg_title {
+  margin: 0;
+  color: #f6f8f7;
+  font-family: 'IBM Plex Sans Devanagari', 'Segoe UI', sans-serif;
+  font-size: 2.05rem;
+  line-height: 1.12;
+  max-width: 260px;
+}
+
+.strugglepg_text {
+  margin: 14px 0 0;
+  color: rgba(157, 220, 187, 0.58);
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+.strugglepg_list {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}

@@ -1,0 +1,18 @@
+.infobadge_tag {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.infobadge_live {
+  background: #e8fbef;
+  color: #1f8355;
+}
+
+.infobadge_demo {
+  background: #fff3de;
+  color: #b36d08;
+}

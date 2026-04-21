@@ -1,0 +1,45 @@
+.btmbar_wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+  padding: 13px 20px 19px;
+  background: #124559;
+  border-top: 1px solid rgba(157, 220, 187, 0.08);
+  z-index: 4;
+}
+
+.btmbar_back,
+.btmbar_next {
+  min-height: 46px;
+  border-radius: 14px;
+  border: 1px solid rgba(157, 220, 187, 0.18);
+  background: rgba(157, 220, 187, 0.08);
+  color: #9bd5b7;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  font-size: 0.96rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btmbar_next {
+  background: rgba(157, 220, 187, 0.14);
+  color: rgba(157, 220, 187, 0.55);
+}
+
+.btmbar_on {
+  border: 0;
+  background: linear-gradient(90deg, #b1e7c9 0%, #8296d8 100%);
+  color: #163240;
+}
+
+.btmbar_wide {
+  grid-column: span 2;
+}
+
+.btmbar_next:disabled {
+  cursor: not-allowed;
+}

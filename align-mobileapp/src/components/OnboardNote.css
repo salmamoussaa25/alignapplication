@@ -1,0 +1,26 @@
+.onboardnote_box {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(157, 220, 187, 0.08);
+  border: 1px solid rgba(157, 220, 187, 0.14);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.onboardnote_icon {
+  width: 14px;
+  height: 14px;
+  color: rgba(255, 226, 157, 0.82);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.onboardnote_text {
+  margin: 0;
+  color: rgba(157, 220, 187, 0.7);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+}

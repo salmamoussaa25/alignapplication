@@ -1,0 +1,25 @@
+.langswitch_wrap {
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 16px;
+  background: #eff3f9;
+  border: 1px solid #dfe7f2;
+}
+
+.langswitch_btn {
+  border: 0;
+  background: transparent;
+  color: #5f6f86;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.langswitch_on {
+  background: #183153;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(24, 49, 83, 0.18);
+}

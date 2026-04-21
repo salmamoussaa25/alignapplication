@@ -1,0 +1,51 @@
+.readypg_wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 52px 22px 26px;
+  background: #011d27;
+}
+
+.readypg_cont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -60px;
+}
+
+.readypg_icon {
+  margin-bottom: 34px;
+}
+
+.readypg_title {
+  margin: 0;
+  color: #f6f8f7;
+  font-family: 'IBM Plex Sans Devanagari', 'Segoe UI', sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.readypg_text {
+  margin: 20px 0 38px;
+  max-width: 280px;
+  color: rgba(157, 220, 187, 0.56);
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.readypg_btn {
+  width: 72%;
+  min-height: 48px;
+  border: 0;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #b1e7c9 0%, #8296d8 100%);
+  color: #14303c;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  box-shadow: 0 0 28px rgba(157, 220, 187, 0.18);
+}

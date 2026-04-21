@@ -1,0 +1,37 @@
+.topbar_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.topbar_brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar_logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 12px 28px rgba(211, 144, 45, 0.25);
+}
+
+.topbar_title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #183153;
+}
+
+.topbar_sub {
+  margin: 4px 0 0;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #66758c;
+}
+
+.topbar_side {
+  flex-shrink: 0;
+}

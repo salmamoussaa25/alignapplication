@@ -1,0 +1,119 @@
+.logininput_container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.logininput_label {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.logininput_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logininput_icon {
+    position: absolute;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+    color: rgba(157, 220, 187, 0.5);
+    pointer-events: none;
+    transition: color 0.3s ease;
+}
+
+.logininput_icon_error {
+    color: #ff6b6b;
+}
+
+.logininput_field {
+    width: 100%;
+    height: 56px;
+    background-color: rgba(18, 69, 89, 0.5);
+    border: 1px solid rgba(157, 220, 187, 0.2);
+    border-radius: 12px;
+    color: #ffffff;
+    padding: 0 16px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.logininput_has_icon {
+    padding-left: 48px;
+}
+
+.logininput_has_toggle {
+    padding-right: 48px;
+}
+
+.logininput_field::placeholder {
+    color: rgba(157, 220, 187, 0.3);
+}
+
+.logininput_field:focus {
+    border-color: #9DDCBB;
+    background-color: rgba(18, 69, 89, 0.8);
+    box-shadow: 0 0 0 3px rgba(157, 220, 187, 0.15);
+}
+
+.logininput_field_error {
+    border-color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.05);
+}
+
+.logininput_field_error:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.15);
+}
+
+.logininput_field:focus ~ .logininput_icon:not(.logininput_icon_error) {
+    color: #9DDCBB;
+}
+
+.logininput_toggle_btn {
+    position: absolute;
+    right: 16px;
+    background: transparent;
+    border: none;
+    color: rgba(157, 220, 187, 0.5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.logininput_toggle_btn:hover {
+    color: #9DDCBB;
+}
+
+.logininput_toggle_btn:active {
+    transform: scale(0.9);
+}
+
+.logininput_toggle_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.logininput_error_text {
+    color: #ff6b6b;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+    animation: logininput_fade_in 0.3s ease-out;
+}
+
+@keyframes logininput_fade_in {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}

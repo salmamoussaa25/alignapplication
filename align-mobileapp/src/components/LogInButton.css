@@ -1,0 +1,45 @@
+.loginbtn_base {
+    width: 100%;
+    height: 56px;
+    background: linear-gradient(to right, #9DDCBB, #6478B9);
+    color: #011D27;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(157, 220, 187, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease-in-out, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.loginbtn_base:hover:not(:disabled) {
+    box-shadow: 0 10px 15px -3px rgba(157, 220, 187, 0.5);
+    opacity: 0.95;
+}
+
+.loginbtn_base:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+.loginbtn_loading_state {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background: #6478B9;
+    box-shadow: none;
+}
+
+.loginbtn_spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(1, 29, 39, 0.3);
+    border-top-color: #011D27;
+    border-radius: 50%;
+    animation: loginbtn_spin 0.8s linear infinite;
+}
+
+@keyframes loginbtn_spin {
+    to { transform: rotate(360deg); }
+}

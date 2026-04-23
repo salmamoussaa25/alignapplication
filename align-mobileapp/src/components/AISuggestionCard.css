@@ -1,0 +1,116 @@
+.aisuggestion_wrap {
+    margin: 0 16px;
+    background: linear-gradient(145deg, rgba(72, 199, 160, 0.08) 0%, rgba(138, 116, 249, 0.12) 100%);
+    border: 1px solid rgba(138, 116, 249, 0.2);
+    border-radius: 20px;
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    animation: aisuggestion_pulse_border 3s ease-in-out infinite;
+  }
+  
+  @keyframes aisuggestion_pulse_border {
+    0%, 100% { border-color: rgba(138, 116, 249, 0.2); }
+    50%       { border-color: rgba(138, 116, 249, 0.4); }
+  }
+  
+  .aisuggestion_head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .aisuggestion_dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #48c7a0;
+    box-shadow: 0 0 8px rgba(72, 199, 160, 0.6);
+    animation: aisuggestion_blink 2s ease-in-out infinite;
+  }
+  
+  @keyframes aisuggestion_blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.4; }
+  }
+  
+  .aisuggestion_label {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+  }
+  
+  .aisuggestion_text {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .aisuggestion_mainbtn {
+    width: 100%;
+    padding: 13px;
+    background: rgba(255, 255, 255, 0.92);
+    border: none;
+    border-radius: 12px;
+    color: #1a2332;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+  
+  .aisuggestion_mainbtn:hover {
+    background: #ffffff;
+    transform: translateY(-1px);
+  }
+  
+  .aisuggestion_mainbtn:active {
+    transform: scale(0.98);
+  }
+  
+  .aisuggestion_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  
+  .aisuggestion_smallbtn {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+  
+  .aisuggestion_smallbtn:hover {
+    background: rgba(255, 255, 255, 0.13);
+    transform: translateY(-1px);
+  }
+  
+  .aisuggestion_smallbtn:active {
+    transform: scale(0.97);
+  }
+  
+  .aisuggestion_ghostbtn {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px;
+    transition: color 0.2s ease;
+  }
+  
+  .aisuggestion_ghostbtn:hover {
+    color: rgba(255, 255, 255, 0.65);
+  }

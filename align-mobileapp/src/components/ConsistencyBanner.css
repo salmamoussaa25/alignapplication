@@ -1,0 +1,42 @@
+.consistency_wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    padding: 14px 16px;
+  }
+  
+  .consistency_iconbox {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(72, 199, 160, 0.12);
+    border: 1px solid rgba(72, 199, 160, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .consistency_icon {
+    width: 17px;
+    height: 17px;
+    color: #48c7a0;
+  }
+  
+  .consistency_title {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  .consistency_sub {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 3px 0 0;
+  }

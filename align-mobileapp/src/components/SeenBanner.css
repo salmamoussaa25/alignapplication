@@ -1,0 +1,41 @@
+.seenbanner_wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    padding: 14px 16px;
+    animation: seenbanner_fadein 0.4s ease both;
+  }
+  
+  @keyframes seenbanner_fadein {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  .seenbanner_iconbox {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(248, 113, 113, 0.15);
+    border: 1px solid rgba(248, 113, 113, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .seenbanner_icon {
+    width: 15px;
+    height: 15px;
+    color: #f87171;
+  }
+  
+  .seenbanner_text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    font-weight: 500;
+  }

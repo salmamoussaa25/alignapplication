@@ -1,0 +1,81 @@
+.statsgrid_wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 16px;
+  }
+  
+  .statsgrid_card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 14px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+  
+  .statsgrid_card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
+  }
+  
+  .statsgrid_card_lav {
+    background: rgba(138, 116, 249, 0.15);
+    border-color: rgba(138, 116, 249, 0.25);
+  }
+  
+  .statsgrid_card_lav:hover {
+    background: rgba(138, 116, 249, 0.22);
+  }
+  
+  .statsgrid_label {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.45);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin: 0;
+  }
+  
+  .statsgrid_label_lav {
+    color: rgba(180, 165, 255, 0.7);
+  }
+  
+  .statsgrid_num {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 2px 0 0;
+    line-height: 1;
+  }
+  
+  .statsgrid_meta {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+  }
+  
+  .statsgrid_meta_lav {
+    color: rgba(180, 165, 255, 0.6);
+  }
+  
+  .statsgrid_balancetag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 6px;
+    background: rgba(72, 199, 160, 0.15);
+    border: 1px solid rgba(72, 199, 160, 0.3);
+    border-radius: 20px;
+    padding: 4px 9px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #48c7a0;
+    width: fit-content;
+  }
+  
+  .statsgrid_balanceicon {
+    font-size: 12px;
+    opacity: 0.8;
+  }

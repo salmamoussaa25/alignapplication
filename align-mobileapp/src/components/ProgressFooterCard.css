@@ -1,0 +1,47 @@
+.progressfooter_wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    padding: 14px 16px;
+  }
+  
+  .progressfooter_iconbox {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(72, 199, 160, 0.2), rgba(138, 116, 249, 0.2));
+    border: 1px solid rgba(138, 116, 249, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    animation: progressfooter_spin 4s linear infinite;
+  }
+  
+  @keyframes progressfooter_spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .progressfooter_icon {
+    width: 17px;
+    height: 17px;
+    color: #8a74f9;
+  }
+  
+  .progressfooter_title {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 3px;
+  }
+  
+  .progressfooter_text {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.45);
+    margin: 0;
+  }

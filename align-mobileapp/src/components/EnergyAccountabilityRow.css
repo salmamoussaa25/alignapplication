@@ -1,0 +1,95 @@
+.energyrow_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 16px;
+  }
+  
+  .energyrow_energycard {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 16px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .energyrow_energylabel {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+  }
+  
+  .energyrow_bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    height: 28px;
+  }
+  
+  .energyrow_bar {
+    width: 8px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease, height 0.3s ease;
+  }
+  
+  .energyrow_bar:nth-child(1) { height: 40%; }
+  .energyrow_bar:nth-child(2) { height: 55%; }
+  .energyrow_bar:nth-child(3) { height: 70%; }
+  .energyrow_bar:nth-child(4) { height: 85%; }
+  .energyrow_bar:nth-child(5) { height: 100%; }
+  
+  .energyrow_bar_on {
+    background: linear-gradient(180deg, #48c7a0, #34a882);
+  }
+  
+  .energyrow_energytext {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+  }
+  
+  .energyrow_accountcard {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 16px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+  
+  .energyrow_accountcard:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
+  }
+  
+  .energyrow_accountcard:active {
+    transform: scale(0.97);
+  }
+  
+  .energyrow_accounticon {
+    width: 22px;
+    height: 22px;
+    color: rgba(138, 116, 249, 0.8);
+  }
+  
+  .energyrow_accounttitle {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+  }
+  
+  .energyrow_accountsub {
+    font-size: 11px;
+    color: rgba(72, 199, 160, 0.8);
+    margin: 0;
+  }

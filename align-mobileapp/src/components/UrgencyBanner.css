@@ -1,0 +1,68 @@
+.urgencybanner_wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+  
+  .urgencybanner_wrap:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-1px);
+  }
+  
+  .urgencybanner_wrap:active {
+    transform: scale(0.98);
+  }
+  
+  .urgencybanner_iconbox {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(138, 116, 249, 0.15);
+    border: 1px solid rgba(138, 116, 249, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .urgencybanner_barsicon {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 16px;
+  }
+  
+  .urgencybanner_bar {
+    width: 3px;
+    height: 6px;
+    background: #8a74f9;
+    border-radius: 2px;
+  }
+  
+  .urgencybanner_bar_mid {
+    height: 10px;
+  }
+  
+  .urgencybanner_bar_tall {
+    height: 15px;
+  }
+  
+  .urgencybanner_title {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+  }
+  
+  .urgencybanner_sub {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.45);
+    margin: 2px 0 0;
+  }
